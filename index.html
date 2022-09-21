@@ -15,8 +15,8 @@
 <body>
     <header>
         <div class="container bgcolor">
-            <div class=" w-100">
-                <h2 class="text-light text-center py-4">Namoz vaqtlari</h2>
+            <div class="w-100">
+                <h2 class="line text-light text-center py-4"><span class="location"><img src="/images/images/map-location 1.png" alt=""></span> Namoz vaqtlari</h2>
             </div>
         </div>
     </header>
@@ -25,12 +25,18 @@
             <div class="container boxs`">
                 <div class="row bgcolor my-3 rounded-3">
                     <div class="col-sm-6 d-none d-sm-flex justify-content-end p-3">
-                        <h4 class="text-light text-center">Hududni tanlang: </h4>
+                        <h4 class="text-light text-center pt-1">Hududni tanlang: </h4>
                     </div>
-                    <div class="col-sm-6 col-md-6 d-flex justify-content-md-start p-3 ">
-                        <select class="bg-sm-success bg-light my-sm-auto w-50 rounded-3 text-dark fs-5" id='region'>
-                            <option selected>Toshkent</option>
-                        </select>
+                    <div class="col-12 col-sm-6 col-md-6 p-3 ">
+                        <div id="selected">
+                            <div class="regionChoose">
+                                <p class="pi mb-0 pt-1 d-inline-block">Toshkent</p>
+                                <div class="bg-light rounded-5 py-1 px-2 d-inline-block" id="vector"><img src="/images/images/Frame.png" alt=""></div>
+                            </div>
+                            <div class="option">
+
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-12 col-md-6 d-none  d-sm-flex justify-content-start px-5 py-3">
                         <h5 class="text-warning w-75 text-center">Mintaqa:     <span class="text-light w-25" id="regionspan"></span></h5>
@@ -43,7 +49,7 @@
         </section>
         <section>
             <div class="container box">
-                <div class="row m-2">
+                <div class="row m-2 position-relative">
                     <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
                         <div class="card h-100 p-2">
                             <h3 class="text-warning fs-4">Bomdod</h3>

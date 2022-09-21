@@ -49,56 +49,73 @@ function todayDate(result){
 function regionOption(){
     provencie.sort();
     provencie.forEach((item)=>{
-        const option=createElements('option','',item);
-        $('#region').appendChild(option);
+        const option=createElements('option','choose',item);
+        $('.option').appendChild(option);
     })
 }
 regionOption()
 
 
-$('#region').addEventListener('change',(e)=>{
-    switch(e.target.value){
-        case "Andijon":{
-            getData(e.target.value);
-        };break;
-        case "Buxoro":{
-            getData(e.target.value);
-        };break;
-        case "Farg'ona":{
-            getData("Qo'qon");
-        };break;
-        case "Jizzax":{
-            getData(e.target.value);
-        };break;
-        case "Namangan":{
-            getData(e.target.value);
-        };break;
-        case "Navoiy":{
-            getData(e.target.value);
-        };break;
-        case "Qashqadaryo":{
-            getData("Qarshi");
-        };break;
-        case "Samarqand":{
-            getData(e.target.value);
-        };break;
-        case "Sirdaryo":{
-            getData("Guliston");
-    
-        };break;
-        case "Surxondaryo":{
-            getData("Termiz");
-        };break;
-        case "Xorazm":{
-            getData("Xiva");
-            
-        };break;
-        case "Toshkent":{
-            getData(e.target.value);
-        };break;
+$('.option').addEventListener('click',(e)=>{
+    if(e.target.classList.contains('choose')){
+        $a('.choose').forEach(item=>{
+            (item.classList.contains('choose_active'))?item.classList.remove('choose_active'):0;
+        })
+        e.target.classList.add('choose_active')
+        switch(e.target.value){
+            case "Andijon":{
+                getData(e.target.value);
+            };break;
+            case "Buxoro":{
+                getData(e.target.value);
+            };break;
+            case "Farg'ona":{
+                getData("Qo'qon");
+            };break;
+            case "Jizzax":{
+                getData(e.target.value);
+            };break;
+            case "Namangan":{
+                getData(e.target.value);
+            };break;
+            case "Navoiy":{
+                getData(e.target.value);
+            };break;
+            case "Qashqadaryo":{
+                getData("Qarshi");
+            };break;
+            case "Samarqand":{
+                getData(e.target.value);
+            };break;
+            case "Sirdaryo":{
+                getData("Guliston");
+        
+            };break;
+            case "Surxondaryo":{
+                getData("Termiz");
+            };break;
+            case "Xorazm":{
+                getData("Xiva");
+                
+            };break;
+            case "Toshkent":{
+                getData(e.target.value);
+            };break;
+        }
+        $('.pi').innerHTML="";
+        $('.pi').innerHTML=e.target.value;
     }
+    
 })
 
-
+$('.regionChoose').addEventListener('click',(e)=>{
+    $('.option').style.display="block"
+})
+$('.option').addEventListener("mouseup",()=>{
+    $('.option').style.display="none"
+})
+$('.option').addEventListener("blur",()=>{
+    $('.option').style.display="none"
+})
 
 
