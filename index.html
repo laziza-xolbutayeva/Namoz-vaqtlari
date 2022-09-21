@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css -->
+    <link rel="stylesheet" href="/style/style.css">
+    <!-- bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Namoz vaqtlari</title>
+</head>
+<body>
+    <header>
+        <div class="container bgcolor">
+            <div class=" w-100">
+                <h2 class="text-light text-center py-4">Namoz vaqtlari</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container boxs`">
+                <div class="row bgcolor my-3 rounded-3">
+                    <div class="col-sm-6 d-none d-sm-flex justify-content-end p-3">
+                        <h4 class="text-light text-center">Hududni tanlang: </h4>
+                    </div>
+                    <div class="col-sm-6 col-md-6 d-flex justify-content-md-start p-3 ">
+                        <select class="bg-sm-success bg-light my-sm-auto w-50 rounded-3 text-dark fs-5" id='region'>
+                            <option selected>Toshkent</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none  d-sm-flex justify-content-start px-5 py-3">
+                        <h5 class="text-warning w-75 text-center">Mintaqa:     <span class="text-light w-25" id="regionspan"></span></h5>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end p-3 text-center">
+                        <h5 class="text-warning fw-bold text-center" id="date"></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container box">
+                <div class="row m-2">
+                    <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
+                        <div class="card h-100 p-2">
+                            <h3 class="text-warning fs-4">Bomdod</h3>
+                            <img src="/images/images/tong.svg" alt="">
+                            <p class="fs-3 fw-bold" id="time"></p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
+                        <div class="card p-2">
+                            <h3 class="text-warning fs-4">Quyosh</h3>
+                            <img src="/images/images/sunrise.svg" alt="">
+                            <p class="fs-3 fw-bold" id="time"></p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
+                        <div class="card p-2">
+                            <h3 class="text-warning fs-4">Peshin</h3>
+                            <img src="/images/images/sun.svg" alt="">
+                            <p class="fs-3 fw-bold" id="time"></p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
+                        <div class="card p-2">
+                            <h3 class="text-warning fs-4">Asr</h3>
+                            <img src="/images/images/sunsasr.svg" alt="">
+                            <p class="fs-3 fw-bold" id="time"></p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
+                        <div class="card p-2">
+                            <h3 class="text-warning fs-4">Shom</h3>
+                            <img src="/images/images/shom.svg" alt="">
+                            <p class="fs-3 fw-bold" id="time"></p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
+                        <div class="card p-2">
+                            <h3 class="text-warning fs-4">Xufton</h3>
+                            <img src="/images/images/moon.svg" alt="">
+                            <p class="fs-3 fw-bold" id="time"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+<script src="/script/region.js"></script>
+<script src="/script/plugin.js"></script>
+<script src="/script/script.js"></script>
+</html>
