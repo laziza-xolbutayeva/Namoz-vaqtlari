@@ -10,6 +10,6 @@ function $a(str){
 function createElements(tag,clas,comment){
     const div=document.createElement(tag);
     div.setAttribute("class",clas);
-    div.textContent=comment;
+    div.innerHTML=comment;
     return div;
 }

@@ -5,22 +5,26 @@
 }
 
 body{
-    background-image: url(/images/images/sloy.png);
-    background-repeat: no-repeat;
+    background-image: url(/images/images/body-bg20.png);
+}
+.bgcolor{
+    background-color:#023926;
+
 }
 .location{
     display: none;
 }
 .line{
-    border-bottom: 2px solid white;
+    border-bottom:2px solid white;
+}
+.lightwidth{
+    width: 25px;
 }
 .card{
-    background-color: rgba(255, 255, 255, 0.2)!important;
+    background-color: #008653!important;
     box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
 }
-.card:hover{
-    background-color: rgba(32, 32, 32, 0.356)!important;
-}
+
 #time{
     color: white;
 }
@@ -35,7 +39,7 @@ body{
     padding: 3px 5px 3px 30px;
     font-size: 20px;
     font-weight: 700;
-    width: 230px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -67,27 +71,33 @@ body{
 }
 
 
-
-@media only screen and (max-width:992px){
-    body{
-        background-image: url(/images/images/body-bg20.png);
-        background-repeat: repeat;
-    }
-    .bgcolor{
-        background-color:#023926;
-    
-    }
-    .card{
-        background-color: #008653!important;
-    }
-    .line{
-        border-bottom:none;
-    }
+.dark_mode{
+    background-image:url("/images/images/sloy.png")
 }
+.dark_card{
+    background-color: rgba(255, 255, 255, 0.2)!important;
+}
+.lightgreen{
+    background-color:#023926;
+}
+.light2green{
+    background-color: #008653;
+}
+.darkblack{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.darkwhite{
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+
 @media only screen and (max-width:576px){
     .location{
         display: inline-block;
-        float: left;
+    }
+    .line{
+        border-bottom:none;
     }
     .none{
         display: none!important;

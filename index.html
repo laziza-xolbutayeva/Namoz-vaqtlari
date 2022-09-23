@@ -14,23 +14,25 @@
 </head>
 <body>
     <header>
-        <div class="container bgcolor">
-            <div class="w-100">
-                <h2 class="line text-light text-center py-4"><span class="location"><img src="/images/images/map-location 1.png" alt=""></span> Namoz vaqtlari</h2>
+        <div class="container bgcolor" id="head">
+            <div class="w-100 d-flex justify-content-center">
+                <div class="location my-auto"><img src="/images/images/map-location.svg" alt="location"></div>
+                <h2 class="text-light text-center py-4 w-75"> Namoz vaqtlari</h2>
+                <div class="my-auto light"><img src="/images/images/moon-stars-fill-custom.svg" alt="" class="lightwidth" id="moon"></div>
             </div>
         </div>
     </header>
     <main>
         <section>
             <div class="container boxs`">
-                <div class="row bgcolor my-3 rounded-3">
+                <div class="row bgcolor my-3 rounded-3" id="chooseWrapper">
                     <div class="col-sm-6 d-none d-sm-flex justify-content-end p-3">
                         <h4 class="text-light text-center pt-1">Hududni tanlang: </h4>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 p-3 ">
                         <div id="selected">
                             <div class="regionChoose">
-                                <p class="pi mb-0 pt-1 d-inline-block">Toshkent</p>
+                                <p class="pi mb-0 pt-1 d-inline-block">Hududni tanlang</p>
                                 <div class="bg-light rounded-5 py-1 px-2 d-inline-block" id="vector"><img src="/images/images/Frame.png" alt=""></div>
                             </div>
                             <div class="option">
@@ -53,47 +55,62 @@
                     <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
                         <div class="card h-100 p-2">
                             <h3 class="text-warning fs-4">Bomdod</h3>
-                            <img src="/images/images/tong.svg" alt="">
+                            <img src="/images/images/tong.svg" alt="tong">
                             <p class="fs-3 fw-bold" id="time"></p>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
                         <div class="card p-2">
                             <h3 class="text-warning fs-4">Quyosh</h3>
-                            <img src="/images/images/sunrise.svg" alt="">
+                            <img src="/images/images/sunrise.svg" alt="sunrise">
                             <p class="fs-3 fw-bold" id="time"></p>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
                         <div class="card p-2">
                             <h3 class="text-warning fs-4">Peshin</h3>
-                            <img src="/images/images/sun.svg" alt="">
+                            <img src="/images/images/sun.svg" alt="sun">
                             <p class="fs-3 fw-bold" id="time"></p>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
                         <div class="card p-2">
                             <h3 class="text-warning fs-4">Asr</h3>
-                            <img src="/images/images/sunsasr.svg" alt="">
+                            <img src="/images/images/sunsasr.svg" alt="sunsasr">
                             <p class="fs-3 fw-bold" id="time"></p>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
                         <div class="card p-2">
                             <h3 class="text-warning fs-4">Shom</h3>
-                            <img src="/images/images/shom.svg" alt="">
+                            <img src="/images/images/shom.svg" alt="shom">
                             <p class="fs-3 fw-bold" id="time"></p>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2 card-wrapper text-center p-2">
                         <div class="card p-2">
                             <h3 class="text-warning fs-4">Xufton</h3>
-                            <img src="/images/images/moon.svg" alt="">
+                            <img src="/images/images/moon.svg" alt="moon">
                             <p class="fs-3 fw-bold" id="time"></p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
+            <div class="container table-responsive-sm ">
+                <table class="table mt-4  text-light w-100">
+                    <thead>
+                        <tr class="lightgreen">
+                            <th>Mintaqa</th> <th>Sana</th> <th>Kun</th> <th>Bomdod</th> <th>Quyosh</th> <th>Peshin</th> <th>Asr</th> <th>Shom</th> <th>Xufton</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+            
         </section>
     </main>
     
