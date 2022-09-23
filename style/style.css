@@ -24,12 +24,12 @@ body{
     background-color: #008653!important;
     box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
 }
+.card:hover{
+    background-color: #00865383!important;
+}
 
 #time{
     color: white;
-}
-.boxs{
-    width: 1258px;
 }
 .regionChoose{
     background: inherit;
@@ -76,6 +76,9 @@ body{
 }
 .dark_card{
     background-color: rgba(255, 255, 255, 0.2)!important;
+}
+.dark_card:hover{
+    background-color: rgba(255, 255, 255, 0.486)!important;
 }
 .lightgreen{
     background-color:#023926;
